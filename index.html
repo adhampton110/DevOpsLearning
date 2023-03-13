@@ -6,9 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="index.js"></script>
-    <title>Tasks</title>
+    <title>Home</title>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <h1>Task Manager</h1>
+    <form onsubmit="handleSubmit(event)">
+		<label for="taskName">Task Name:</label><br>
+		<input type="text" id="taskName" required><br>
+		<label for="taskDescription">Task Description:</label><br>
+		<textarea id="taskDescription" rows="4" cols="50"></textarea><br>
+		<input type="submit" value="Submit">
+	</form>
+
+    <h1>My Tasks</h1>
+    <div id="taskList"></div>
 </body>
 </html>
