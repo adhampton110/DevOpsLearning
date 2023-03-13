@@ -7,7 +7,6 @@ function addTask(event) {
 	event.preventDefault();
 
 	const taskName = document.getElementById("taskName").value;
-	const taskDesc = document.getElementById("taskDesc").value;
 
 	// Create task div
 	const taskDiv = document.createElement("div");
@@ -16,20 +15,13 @@ function addTask(event) {
 	// Create checkbox
 	const checkbox = document.createElement("input");
 	checkbox.type = "checkbox";
+	checkbox.classList.add("task-checkbox");
 	checkbox.addEventListener("change", isCompleted);
+	taskDiv.appendChild(checkbox);
 
 	// Create task name
 	const taskNameDiv = document.createElement("div");
 	taskNameDiv.innerText = taskName;
-
-	// Create task description
-	if (taskDesc) {
-		const taskDescDiv = document.createElement("div");
-		taskDescDiv.innerText = taskDesc;
-		taskDiv.appendChild(taskDescDiv);
-	}
-
-	taskDiv.appendChild(checkbox);
 	taskDiv.appendChild(taskNameDiv);
 
 	taskList.appendChild(taskDiv);

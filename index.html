@@ -7,14 +7,14 @@
 <body>
 	<h1>Task Manager</h1>
 	<form id="taskForm">
-		<label for="taskName">Task Name:</label>
-		<input type="text" id="taskName" required>
+		<div class="inputContainer">
+			<label for="taskName"><strong>Task Name:</strong></label><br>
+			<input type="text" id="taskName" required><br>
+		</div>
 
-		<label for="taskDesc">Task Description:</label>
-		<input type="text" id="taskDesc">
-
-		<button type="submit">Add Task</button>
+		<button id="submit" type="submit">Add Task</button>	
 	</form>
+	<hr>
 	<div id="taskList">
 	</div>
 
