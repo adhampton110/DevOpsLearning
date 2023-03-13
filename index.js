@@ -1,31 +1,50 @@
-const tasks = []
+const taskForm = document.getElementById("taskForm");
+const taskList = document.getElementById("taskList");
 
-function handleSubmit(event) {
-    event.preventDefault();
-    var taskName = document.getElementById("taskName").value;
-    var taskDescription = document.getElementById("taskDescription").value;
-    const task = {taskName:taskName, taskDescription:taskDescription};
-    tasks.push(task);
-    // Create a new list item element
-    var listItem = document.createElement("div");
+taskForm.addEventListener("submit", addTask);
 
-    // Create a new heading element for the task name
-    var heading = document.createElement("h3");
-    heading.textContent = taskName;
+function addTask(event) {
+	event.preventDefault();
 
-    // Create a new paragraph element for the task description
-    var paragraph = document.createElement("p");
-    paragraph.textContent = taskDescription;
+	const taskName = document.getElementById("taskName").value;
+	const taskDesc = document.getElementById("taskDesc").value;
 
-    // Append the heading and paragraph elements to the list item
-    listItem.appendChild(heading);
-    listItem.appendChild(paragraph);
+	// Create task div
+	const taskDiv = document.createElement("div");
+	taskDiv.classList.add("task");
 
-    // Append the list item to the task list
-    var taskList = document.getElementById("taskList");
-    taskList.appendChild(listItem);
+	// Create checkbox
+	const checkbox = document.createElement("input");
+	checkbox.type = "checkbox";
+	checkbox.addEventListener("change", isCompleted);
 
-    // Clear the input fields
-    document.getElementById("taskName").value = "";
-    document.getElementById("taskDescription").value = ""; 
+	// Create task name
+	const taskNameDiv = document.createElement("div");
+	taskNameDiv.innerText = taskName;
+
+	// Create task description
+	if (taskDesc) {
+		const taskDescDiv = document.createElement("div");
+		taskDescDiv.innerText = taskDesc;
+		taskDiv.appendChild(taskDescDiv);
+	}
+
+	taskDiv.appendChild(checkbox);
+	taskDiv.appendChild(taskNameDiv);
+
+	taskList.appendChild(taskDiv);
+
+	// Clear form inputs
+	taskForm.reset();
+}
+
+function isCompleted(event) {
+	const checkbox = event.target;
+	const taskName = checkbox.nextSibling;
+
+	if (checkbox.checked) {
+		taskName.style.textDecoration = "line-through";
+	} else {
+		taskName.style.textDecoration = "none";
+	}
 }

@@ -1,0 +1,15 @@
+.task {
+    width: 300px;
+	height: auto;
+	margin: auto;
+	background-color: lightgray;
+	padding: 20px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+.completed {
+	text-decoration: line-through;
+    color: #999;
+}

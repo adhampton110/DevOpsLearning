@@ -1,24 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="index.js"></script>
-    <title>Home</title>
+	<title>Task Manager</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <h1>Task Manager</h1>
-    <form onsubmit="handleSubmit(event)">
-		<label for="taskName">Task Name:</label><br>
-		<input type="text" id="taskName" required><br>
-		<label for="taskDescription">Task Description:</label><br>
-		<textarea id="taskDescription" rows="4" cols="50"></textarea><br>
-		<input type="submit" value="Submit">
-	</form>
+	<h1>Task Manager</h1>
+	<form id="taskForm">
+		<label for="taskName">Task Name:</label>
+		<input type="text" id="taskName" required>
 
-    <h1>My Tasks</h1>
-    <div id="taskList"></div>
+		<label for="taskDesc">Task Description:</label>
+		<input type="text" id="taskDesc">
+
+		<button type="submit">Add Task</button>
+	</form>
+	<div id="taskList">
+	</div>
+
+	<script src="index.js"></script>
 </body>
 </html>
