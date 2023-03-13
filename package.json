@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/adhampton110/DevOpsLearning/issues"
   },
-  "homepage": "https://github.com/adhampton110/DevOpsLearning#readme"
+  "homepage": "https://github.com/adhampton110/DevOpsLearning#readme",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
 }
