@@ -10,7 +10,7 @@ html, body {
 	flex-direction: row;
 	justify-content: space-between;
 	font-family: "Roboto",sans-serif;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .left-column {
@@ -21,19 +21,29 @@ html, body {
 
 .content {
 	color: white;
-	text-align: center;
+	text-align: left;
 	width: 80%;
-	padding: 10px;
+	padding: 10px 200px 10px 50px;
 	line-height: 24px;
 	margin-left: 5%;
+	margin-right: 15%;
 }
 
-  .right-column {
+.right-column{
 	width: 15%;
 	padding: 10px;
 	color: #ADBECB;
 	background-color: #141B1F;
 	height: auto;
-	align-self: flex-start;
-  }
+	position: fixed;
+	top: 0;
+	right: 0;	
+	display: flex;
+	flex-direction: column;
+}
 
+.right-column a{
+	color: #ADBECB;
+	text-decoration: none;
+	padding: 3px 0;
+}
