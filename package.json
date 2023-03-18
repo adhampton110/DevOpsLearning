@@ -2,7 +2,7 @@
   "name": "devopslearning",
   "version": "1.0.0",
   "description": "This repository is used to document my learning on getting a better understanding of the processes and practices used to improve the speed and quality of software developement, deployement, and maintenance. I plan to develop a minimal application that utilizes various servies commonly used in the DevOps lifecycle. In addition to the development, I will release markdown notes each day of findings/plans. The reason for documenting these days is so that others can take something from it and also hopefully enhance the resources.",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -18,6 +18,10 @@
   },
   "homepage": "https://github.com/adhampton110/DevOpsLearning#readme",
   "devDependencies": {
-    "jest": "^29.5.0"
+    "nodemon": "^2.0.21"
+  },
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2"
   }
 }

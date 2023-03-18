@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+	<link rel="stylesheet" type="text/css" href="css/dropdown.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<div class="left-column">
+			<%- include('navbar') %>
+		</div>
+		<div class="content">
+			<h1>DevOps Overview</h1>
+			<h2 id="overview">Overview</h2>
+			<p>DevOps is a software development methodology that 
+                impacts the culture, practices, and tools of software 
+                development. It requires companies to transform how 
+                they build and deliver software because software is 
+                an integral component of every part of a business.
+            </p>
+			<h2 id="benefits-of-devops">Benefits of DevOps</h2>
+			<p>There are several benefits to using DevOps, including:</p>
+            <ul>
+                <li>DevOps is a software development methodology that 
+                    impacts the culture, practices, and tools of 
+                    software development. It requires companies to 
+                    transform how they build and deliver software
+                     because software is an integral component of 
+                     every part of a business.
+                </li>
+                <li>
+                    Rapid Delivery: increases the frequency and pace 
+                    of releases so businesses can innovate and improve 
+                    their product faster. The quicker businesses can 
+                    release new features and fix bugs, the faster they 
+                    can respond to customers' needs. 
+                </li>
+                <li>
+                    Reliability: ensures the quality of application 
+                    updates and infrastructure changes.
+                </li>
+                <li>
+                    Scale: allows businesses to operate and manage 
+                    infrastructure and development processes at scale.
+                     Automation and consistency help manage complex or 
+                     varying systems efficiently and with reduced risk.
+                </li>
+                <li>
+                    Improved Collaboration: encourages developers and 
+                    operation teams to collaborate closely, share 
+                    responsibilities, and combine their workflows. 
+                    This, in turn, reduces inefficiencies and saves time.
+                </li>
+                <li>
+                    Security: enables businesses to adopt a DevOps 
+                    model without sacrificing security by using 
+                    automated compliance policies, fine-grained 
+                    controls, and configuration management techniques.
+                </li>
+            </ul>
+			<h2 id="devops-stages">DevOps Stages</h2>
+			<p>The DevOps life cycle consists of several stages that are
+                not necessarily implemented sequentially:
+            </p>
+            <ul>
+                <li>
+                    Plan: Infrastructure, resources, and technologies 
+                    are determined. 
+                </li>
+                <li>
+                    Code: Development of the product/service based on 
+                    the features from the roadmap occurs.
+                </li>
+                <li>
+                    Build: Developers add their code to a centralized repository. 
+                    Automated testing tools are used to find bugs, errors, and 
+                    any other issues. These can be can be corrected before moving 
+                    to integration or QA testing.
+                </li>
+                <li>
+                   Testing: Build is deployed in a testing environment. 
+                   Automated testing tools are used to test for security,
+                    performance and infrastructure changes 
+                </li>
+                <li>
+                    Deploy: End-users have full access to the product.
+                </li>
+                <li>
+                    Operate: Feedback loops for end-users are setup to collect
+                    data on the application's utilization and performance.
+                </li>
+                <li>
+                    Monitor: Operational data is collected and analyzed as feedback 
+                    into the plan stage for the next iteration through the DevOps lifecycle.
+                </li>
+            </ul>
+			<h2 id="devops-practices">DevOps Practices</h2>
+			<p>The following are "best practices" incorporated in a DevOps environment:</p>
+            <ul>
+                <li>
+                    Continuous Integration (CI): Developers regularly merge their code changes 
+                    into a central repository, after which automated builds and tests are run.
+                </li>
+                <li>
+                    Continuous Delivery (CD): Code changes are automatically built, tested, 
+                    and prepared for a release to production.Code changes are deployed to a 
+                    test environment after the build stage.
+                </li>
+                <li>
+                    Microservices: A set of small services to build a single application.
+                </li>
+                <li>
+                    Infrastructure as Code: The tools, processes, and environments used to create software applications.
+                </li>
+                <li>
+                    Monitor and Logging: Metrics and logs are monitored to see how an application and infrastructure's
+                     performance impacts the experience of their product's end user.
+                </li>
+            </ul>
+			<h2 id="toolchains">Toolchains</h2>
+				<p>
+                    To implement DevOps, businesses need to use a toolchain to shorten and automate tasks for the stages 
+                    of the DevOps lifecycle. The DevOps Toolchain is a combination of tools used during each stage of 
+                    the DevOps lifecycle.
+                </p>
+			<h2 id="C">Summary</h2>
+            <p>
+                In summary, DevOps is a software development methodology that requires companies to transform how they 
+                build and deliver software. It offers several benefits, incorporates several best practices, and requires 
+                the use of a toolchain.
+
+            </p>
+		</div>
+		<div class="right-column">
+			<div class="right-column">
+				<strong><p>Contents</p></strong>
+				<a href="#overview">Overview</a>
+				<a href="#benefits-of-devops">Benefits of DevOps</a>
+				<a href="#devops-stages">DevOps Stages</a>
+				<a href="#devops-practices">DevOps Practices</a>
+				<a href="#toolchains">Toolchains</a>
+				<a href="#summary">Summary</a>
+			</div>
+		</div>
+	</div>
+	<script src="js/index.js"></script>
+</body>
+</html>
