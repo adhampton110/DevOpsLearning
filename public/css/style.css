@@ -1,0 +1,39 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #1C262D;
+  }
+
+.container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	font-family: "Roboto",sans-serif;
+    font-size: 14px;
+}
+
+.left-column {
+	width: 15%;
+	color: #ADBECB;
+	background-color: #141B1F;
+  }
+
+.content {
+	color: white;
+	text-align: center;
+	width: 80%;
+	padding: 10px;
+	line-height: 24px;
+	margin-left: 5%;
+}
+
+  .right-column {
+	width: 15%;
+	padding: 10px;
+	color: #ADBECB;
+	background-color: #141B1F;
+	height: auto;
+	align-self: flex-start;
+  }
+
