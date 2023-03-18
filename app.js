@@ -4,12 +4,18 @@ const path = require("path");
 const port = 3000;
 
 app.use(express.static("public"));
+app.set('view engine', 'ejs');
+
 app.get("/", (req,res) => {
-    res.sendFile(path.join(__dirname,"views","home.html"));
+    res.render("home");
+});
+
+app.get("/devops_overview", (req,res) => {
+    res.render("devops_overview");
 });
 
 app.get("/infrastructure_as_code", (req,res) => {
-    res.sendFile(path.join(__dirname,"views","infrastructure_as_code.html"));
+    res.render("infrastructure_as_code");
 });
 
 app.listen(port, () => {

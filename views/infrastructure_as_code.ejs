@@ -2,22 +2,21 @@
 <html>
 <head>
 	<title>Home Page</title>
+	<link rel="stylesheet" type="text/css" href="css/dropdown.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
 </head>
 <body>
 	<div class="container">
 		<div class="left-column">
-			<a href="/">Home</a><br>
-			<a href="#">DevOps Overview</a><br>
-			<a href="#">Learn a Programming Language</a><br>
-			<a href="#">Continuous Integration: In progress</a><br>
-			<a href="#">Continuous Delivery: In progress</a><br>
-			<a href="#">Monitoring Software and Infrastructure: TBD</a><br>
-			<a href="#">Cloud Providers: TBD</a>
+			<%- include('navbar') %>
 		</div>
 		<div class="content">
 			<h1>Infrastructure as Code (IaC)</h1>
-			<h2>Overview</h2>
+			<h2 id="overview">Overview</h2>
 			<p>Infrastructure as code (IaC) is an approach to 
 				managing and provisioning infrastructure through code 
 				instead of through manual processes. As servers and 
@@ -26,7 +25,7 @@
 				code. By codifying and documenting configuration specifications,
 				IaC aids configuration management and helps avoid 
 				undocumented, ad-hoc configuration changes.</p>
-			<h2>Ways to Approach Iac</h2>
+			<h2 id="ways-to-approach-iac">Ways to Approach Iac</h2>
 			<p>IaC divides infrastructure into modular components 
 				that can be combined in different ways through automation. 
 				There are two ways to approach IaC: declarative or imperative. 
@@ -36,12 +35,12 @@
 				the system to meet that desired state. Imperative defines 
 				the specific commands needed to achieve the desired 
 				configuration and the correct order of execution.</p>
-			<h2>Scripting Not Enough?</h2>
+			<h2 id="scripting-not-enough">Scripting Not Enough?</h2>
 			<p>Scripting is not enough for managing infrastructure over 
 				time because scripts become hard to maintain and keep 
 				track of. IaC can help maintain uniformity and scalability 
 				while saving lots of time.</p>
-			<h2>Advantages</h2>
+			<h2 id="advantages">Advantages</h2>
 			<p>IaC provides advantages such as cost, speed, and risk 
 				reduction. By removing the manual component, people are 
 				able to refocus their efforts on other enterprise tasks. 
@@ -50,21 +49,25 @@
 				teams across the enterprise work quickly and more efficiently. 
 				Removing the risk associated with human error, like manual 
 				misconfiguration, can decrease downtime and increase reliability.</p>
-			<h2>Methods</h2>
+			<h2 id="methods">Methods</h2>
 				<ul>
 					<li><strong>Push: </strong>Controlling server pushes the configuration to the destination system.</li>
 					<li><strong>Pull: </strong> Server to be configured will pull its configuration from the controlling server.</li>
 				</ul>
-			<h2>Common Tools</h2>
+			<h2 id="common-tools">Common Tools</h2>
 		</div>
 		<div class="right-column">
-			<a href="infrastructure_as_code">DevOps Overview</a><br>
-			<a href="#">Learn a Programming Language</a><br>
-			<a href="#">Continuous Integration: In progress</a><br>
-			<a href="#">Continuous Delivery: In progress</a><br>
-			<a href="#">Monitoring Software and Infrastructure: TBD</a><br>
-			<a href="#">Cloud Providers: TBD</a>
+			<div class="right-column">
+				<strong><p>Contents</p></strong>
+				<a href="#overview">Overview</a>
+				<a href="#ways-to-approach-iac">Ways to Approach IaC</a>
+				<a href="#scripting-not-enough">Scripting Not Enough</a>
+				<a href="#advantages">Advantages</a>
+				<a href="#methods">Methods</a>
+				<a href="#common-tools">Common Tools</a>
+			</div>
 		</div>
 	</div>
+	<script src="js/index.js"></script>
 </body>
 </html>
