@@ -21,3 +21,5 @@ app.get("/infrastructure_as_code", (req,res) => {
 app.listen(port, () => {
     console.log(`Application listening at localhost:${port}`);
 })
+
+module.exports = app;
