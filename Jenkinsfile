@@ -4,7 +4,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo "building the application"
-                git url: 'https://github.com/adhampton110/DevOpsLearning.git'
+                git branch: '16-configure-jenkins-pipeline', url: 'https://github.com/adhampton110/DevOpsLearning.git'
             }
         }
         stage('Test') {
