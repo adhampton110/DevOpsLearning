@@ -10,7 +10,12 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo 'checking out application'
-                git branch: '16-configure-jenkins-pipeline', url: 'https://github.com/adhampton110/DevOpsLearning.git'
+                checkout([$class: 'GitSCM', 
+                          branches: [[name: '*/**']], 
+                          doGenerateSubmoduleConfigurations: false, 
+                          extensions: [], 
+                          submoduleCfg: [], 
+                          userRemoteConfigs: [[url: 'https://github.com/adhampton110/DevOpsLearning.git']]])
             }
         }
         stage('Build') {
