@@ -11,7 +11,7 @@ pipeline {
             steps {
                 echo 'checking out application'
                 checkout([$class: 'GitSCM', 
-                          branches: '**', 
+                          branches: [[name: '**']],
                           doGenerateSubmoduleConfigurations: false, 
                           extensions: [], 
                           submoduleCfg: [], 
