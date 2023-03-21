@@ -7,17 +7,6 @@ pipeline {
         PATH = "/usr/local/bin:${PATH}"
     } 
     stages {
-        stage('Checkout') {
-            steps {
-                echo 'checking out application'
-                checkout([$class: 'GitSCM', 
-                          branches: [[name: '**']],
-                          doGenerateSubmoduleConfigurations: false, 
-                          extensions: [], 
-                          submoduleCfg: [], 
-                          userRemoteConfigs: [[url: 'https://github.com/adhampton110/DevOpsLearning.git']]])
-            }
-        }
         stage('Build') {
             steps {
                 sh 'building the application'
