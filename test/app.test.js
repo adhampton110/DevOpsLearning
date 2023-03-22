@@ -53,6 +53,18 @@ describe('GET /infrastructure_as_code', () => {
     });
 });
 
+describe('GET /continuous_integration/ci_overview', () => {
+  test('should respond with status code 200', async () => {
+      const response = await request(server).get('/continuous_integration/ci_overview');
+      expect(response.statusCode).toBe(200);
+  });
+
+  test('should render infrastructure_as_code view', async () => {
+      const response = await request(server).get('/continuous_integration/ci_overview');
+      expect(response.text).toContain('key-concepts-in-continuous-integration');
+  });
+});
+
 describe('GET /invalid-url', () => {
     test('should respond with status code 404', async () => {
         const response = await request(server).get('/invalid-url');
