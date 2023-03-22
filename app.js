@@ -22,6 +22,10 @@ app.get("/continuous_integration/ci_overview", (req,res) => {
     res.render("continuous_integration/ci_overview");
 });
 
+app.get("/continuous_integration/jenkins", (req,res) => {
+    res.render("continuous_integration/jenkins");
+});
+
 app.listen(port, () => {
     console.log(`Application listening at localhost:${port}`);
 })

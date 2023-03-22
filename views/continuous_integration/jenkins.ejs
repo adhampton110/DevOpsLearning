@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+	<link rel="stylesheet" type="text/css" href="/css/dropdown.css">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<div class="left-column">
+			<%- include('../navbar') %>
+		</div>
+		<div class="content">
+			<h1 id="jenkins">Jenkins</h1>
+			<p>
+                Jenkins is an open-source automation server that enables developers to 
+                automate the software development process. Jenkins uses the concept of 
+                jobs or projects to automate software development tasks. Jobs can be 
+                triggered manually or automatically based on a variety of conditions 
+                such as code changes, schedule, or external events. Jobs are executed 
+                on build agents or nodes, which can be local or remote machines.
+            </p>
+			<h2 id="jenkins-jobs">Jenkins Jobs</h2>
+			<p>Jenkins jobs are the basic building blocks of the software development process 
+                automation in Jenkins. There are several types of jobs that developers can use, 
+                each with its own specific purpose.</p>
+            <p>
+                A <strong>freestyle project</strong> is the most basic type of Jenkins job. It allows developers 
+                to define a sequence of build steps to automate the software development process. 
+                Developers can configure the job to run on specific nodes or build agents, and 
+                they can also define conditions for the job to be triggered.
+            </p>
+            <p>
+                A <strong>pipeline project</strong> is a powerful tool that allows developers to define the entire 
+                software development process as code. Pipeline projects enable developers to create 
+                complex workflows with multiple stages and conditional execution. Developers can 
+                also use pipeline scripts to define custom logic and integrations with other tools.
+            </p>
+            <p>
+                A <strong>multi-configuration project</strong> allows developers to build and test software on 
+                different platforms and configurations. Multi-configuration projects are useful 
+                for testing software compatibility with different operating systems or hardware 
+                configurations. Developers can define multiple configurations, and Jenkins will 
+                execute the job on each configuration.
+            </p>
+            <p>
+                A <strong>folder</strong> is a way to organize jobs into a hierarchical structure. Folders can be 
+                used to group related jobs and improve the organization and management of Jenkins 
+                jobs. Developers can create folders to group jobs by project, team, or any other 
+                criteria that makes sense for their organization.
+            </p>
+            <p>
+                A <strong>multibranch pipeline</strong> is a pipeline project that automatically creates jobs for 
+                every branch of a code repository. Multibranch pipelines enable developers to automate 
+                the build and test process for every code change, ensuring that code is tested before 
+                it is merged into the main branch. Developers can define pipeline scripts to execute on 
+                each branch.
+            </p>
+            <p>
+                An <strong>organization folder</strong> is a type of folder that is specifically designed to work with 
+                GitHub repositories. Organization folders automatically discover and create jobs for 
+                every repository in a GitHub organization, enabling developers to automate the build 
+                and test process for every code change in the organization's repositories. Developers 
+                can configure organization folders to build and test pull requests or branches, 
+                enabling them to catch issues earlier in the development process.
+            </p>
+            <p>
+                Jenkins provides a variety of plugins that can be used to extend its functionality, such 
+                as plugins for version control systems, testing frameworks, and deployment tools. Jenkins 
+                also provides a built-in web-based interface that enables developers to monitor and manage 
+                the jobs and build agents.
+            </p>
+			<h2 id="jenkins-runners">Jenkins Runners</h2>
+            <p>
+                Jenkins runners, also known as build agents or nodes, are the machines that Jenkins uses to 
+                execute jobs. Runners can be physical machines, virtual machines, or containers.
+            </p>
+            <p>
+                When a job is triggered in Jenkins, the Jenkins master node assigns the job to a runner based 
+                on the runner's label or availability. If a runner with the required label is not available, 
+                the job is queued until a suitable runner is available.
+            </p>
+            <p>
+                Jenkins runners can be configured with specific tools and dependencies to enable the execution 
+                of jobs on different environments. For example, a runner can be configured with specific versions 
+                of programming languages or databases to execute jobs that require those tools.
+            </p>
+            <p>
+                Jenkins runners can be configured to run jobs in different ways, depending on the type of job being 
+                executed. For example, freestyle projects can be executed on a single runner, while pipeline projects 
+                can be executed on multiple runners in parallel.
+            </p>
+		<div class="right-column">
+			<div class="right-column">
+				<strong><p>Contents</p></strong>
+				<a href="#jenkins">Overview</a>
+				<a href="#jenkins-jobs">Jenkins Jobs</a>
+				<a href="#jenkins-runners">Jenkins Runners</a>
+			</div>
+		</div>
+	</div>
+	<script src="/js/index.js"></script>
+</body>
+</html>
