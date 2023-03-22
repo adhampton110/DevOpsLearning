@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+	<link rel="stylesheet" type="text/css" href="/css/dropdown.css">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<div class="left-column">
+			<%- include('../navbar') %>
+		</div>
+		<div class="content">
+			<h1 id="continuous-integration-overview">Continuous Integration Overview</h1>
+			<p>
+                Continuous Integration (CI) is a development practice that involves continuously
+                 integrating code changes into a shared code repository and running automated tests 
+                 to catch issues early in the development process. CI allows developers to work more 
+                 collaboratively and deliver software more quickly and reliably.
+            </p>
+			<h2 id="how-does-continuous-integration-work">How Does Continuous Integration Work?</h2>
+			<p>Continuous Integration involves a series of steps that include:</p>
+            <ol>
+                <li>
+                    <strong>Code Integration: </strong>Developers regularly 
+                    merge their changes into a shared code repository.
+                </li>
+                <li>
+                    <strong>Build: </strong>The build process compiles the 
+                    code and generates artifacts (e.g., binaries, libraries, etc.) 
+                    that can be deployed to various environments.
+                </li>
+                <li>
+                    <strong>Test: </strong>Automated tests are run to ensure that the 
+                    code changes are working as expected.
+                </li>
+                <li>
+                    <strong>Report: </strong>Reports are generated that show the status 
+                    of the build and tests.
+                </li>
+                <li>
+                    <strong>Feedback: </strong>Developers receive feedback on their changes, 
+                    including alerts if there are issues.
+                </li>
+            </ol>
+			<h2 id="benefits-of-continuous-integration">Benefits of Continuous Integration</h2>
+			<p>Here are some of the key concepts in Continuous Integration:</p>
+            <ul>
+                <li>
+                    <strong>Faster Feedback: </strong>CI provides developers with quick feedback on their 
+                    changes, which allows them to catch and fix issues early in the development process.
+                </li>
+                <li>
+                    <strong>Improved Collaboration: </strong>CI encourages developers to work more 
+                    collaboratively by integrating their changes into a shared code repository.
+                </li>
+                <li>
+                    <strong>Higher quality code: </strong>By running automated tests, CI helps ensure 
+                    that code changes are working as expected and are of high quality.
+                </li>
+                <li>
+                    <strong>Faster time to market: </strong>CI helps speed up the development process 
+                    by catching issues early, which can help reduce development time and get products 
+                    to market faster.
+                </li>
+            </ul>
+			<h2 id="key-concepts-in-continuous-integration">Key Concepts in Continuous Integration</h2>
+			<p>Here are some of the key concepts in Continuous Integration:</p>
+            <ul>
+                <li>
+                    <strong>Code Repository: </strong>The code repository is where all the code 
+                    changes are stored.
+                </li>
+                <li>
+                    <strong>Build Server: </strong>The build server is responsible for compiling 
+                    the code and generating the artifacts.
+                </li>
+                <li>
+                    <strong>Automated Tests: </strong>Automated tests are run to ensure that the 
+                    code changes are working as expected.
+                </li>
+                <li>
+                    <strong>Continuous Integration Server: </strong>The Continuous Integration 
+                    server is responsible for managing the build process and running the 
+                    automated tests.
+                </li>
+                <li>
+                    <strong>Build Pipeline: </strong>The build pipeline is a series of 
+                    steps that make up the build process.
+                </li>
+                <li>
+                    <strong>Deployment: </strong>Deployment involves moving the artifacts 
+                    to various environments (e.g., development, staging, production).
+                </li>
+            </ul>
+			<h2 id="conclusion">Conclusion</h2>
+				<p>
+                    Continuous Integration is an important practice that can help developers work more 
+                    collaboratively, catch issues early, and deliver software more quickly and reliably. 
+                    By following the key concepts outlined above, developers can implement a robust CI process 
+                    that helps ensure the quality and reliability of their code changes.
+                </p>
+		</div>
+		<div class="right-column">
+			<div class="right-column">
+				<strong><p>Contents</p></strong>
+				<a href="#continuous-integration-overview">Overview</a>
+				<a href="#how-does-continuous-integration-work">How Does CI Work?</a>
+				<a href="#benefits-of-continuous-integration">Benefits</a>
+				<a href="#key-concepts-in-continuous-integration">Key Concepts</a>
+				<a href="#conclusion">Conclusion</a>
+			</div>
+		</div>
+	</div>
+	<script src="/js/index.js"></script>
+</body>
+</html>

@@ -3,7 +3,7 @@ const app = express();
 const path = require("path");
 const port = 3000;
 
-app.use(express.static("public"));
+app.use(express.static(path.join(__dirname, "public")));
 app.set('view engine', 'ejs');
 
 app.get("/", (req,res) => {
@@ -16,6 +16,10 @@ app.get("/devops_overview", (req,res) => {
 
 app.get("/infrastructure_as_code", (req,res) => {
     res.render("infrastructure_as_code");
+});
+
+app.get("/continuous_integration/ci_overview", (req,res) => {
+    res.render("continuous_integration/ci_overview");
 });
 
 app.listen(port, () => {
