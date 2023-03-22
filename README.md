@@ -50,15 +50,15 @@ The DevOps stack I plan to incorporate for this repository are the following:
 - Github for version control 
 - Docker for containerization
 - Jenkins for CI/CD
-- Prometheus for infrastructure monitoring 
+- Terraform for infrastructure monitoring 
 - Jaegar for application monitoring 
 - AWS ECR for application deployment
 
 ## Content Status
 
 - Learn a Programming language: In progress
-- Infrastructure as Code: TBD
-- Continuous Integration: TBD
+- Infrastructure as Code: In progress
+- Continuous Integration: In progress
 - Continuous Delivery: TBD
 - Monitoring Software and Infrastructure: TBD
 - Cloud Providers: TBD
